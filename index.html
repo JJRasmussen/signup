@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href=style.css>
+</head>
+<body>
+<div class="leftColumn">
+
+    <div class="leftColumnContent">
+        <div id="odinTopDiv"></div>
+
+        <div id="odinCenterDiv">
+            <img class="odinLogo" src="images/odin-lined.png" alt="the logo of The Odin Project, showing a stylized drawing of a viking with a beard.">
+            <div class="odinText">ODIN</div>
+        </div>
+        <div class="odinBotDiv"></div>
+        <div class="odinBotDiv"></div>
+        <p id="imageFooter">Photo by <a href="https://unsplash.com/@robpotter">Rob Potter</a> 
+            on <a href="https://unsplash.com/photos/a-black-bird-sitting-on-top-of-a-tree-branch-KuI8_i40SUg">Unsplash</a></p>
+    </div>
+
+    <div class="borderShadow"></div>
+
+</div>
+
+
+<div class="rightColumn">
+    <div class="rightColumnTop">
+        <p class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p class="text">Sign up <em>now</em> to get started.</p>
+        <p class="text" id="youWantTo">You <em>know</em> you want to.</p>
+    </div>
+    <div class="rightColumnCenter">
+        <form class="signup" action="example.com/path" method="post">
+            
+            <div class="signupInternal">
+                <legend id="signupText">Let's do this!</legend>
+            
+            
+                <div class="signupInput">
+                    <div class="labelPlacement">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" placeholder="Anders" name="first_name">
+                    </div>
+                    <div class="labelPlacement">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" placeholder="And" name="last_name">        
+                    </div>
+                </div>
+                
+                
+                <div class="signupInput">
+                    <div class="labelPlacement">
+                        <label for="user_email">EMAIL</label>
+                        <input type="email" id="user_email" placeholder="A_And38@andeby.dk" name="user_email">
+                    </div>
+
+                    <div class="labelPlacement">
+                        <label for="user_phone_number">PHONE NUMBER</label>
+                        <input type="number" id="user_phone_number" placeholder="555-12345" name="user_phone_number">
+                    </div>
+                </div>
+
+                <div class="signupInput">
+                    <div class="labelPlacement">
+                        <label for="user_psw">PASSWORD</label>
+                        <input type="password" id="user_psw" name="user_psw">
+                    </div>
+                
+                    <div class="labelPlacement">
+                        <label for="user_psw_confirmed">CONFIRM PASSWORD</label>
+                        <input type="password" id="user_psw_confirmed">
+                    </div>
+                </div>
+            </div>
+        </form>
+    <div class="haveAccountPlacement">
+        <button type="button">Create Account</button>
+        <p class="hasAccount">Already have an account? <a href="https://www.google.com">Log in</a></p>
+    </div>
+    </div>
+    <div class="rightColumnBot">
+    </div>
+</div>
+
+</body>
+</html>
