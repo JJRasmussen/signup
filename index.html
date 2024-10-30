@@ -34,7 +34,7 @@
         <p class="text" id="youWantTo">You <em>know</em> you want to.</p>
     </div>
     <div class="rightColumnCenter">
-        <form class="signup" action="example.com/path" method="post">
+        <form class="signup" id="createUserForm" action="example.com/path" method="post">
             
             <div class="signupInternal">
                 <legend id="signupText">Let's do this!</legend>
@@ -43,11 +43,11 @@
                 <div class="signupInput">
                     <div class="labelPlacement">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" placeholder="Anders" name="first_name">
+                        <input type="text" id="first_name" required placeholder="Anders" name="first_name">
                     </div>
                     <div class="labelPlacement">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" placeholder="And" name="last_name">        
+                        <input type="text" id="last_name" required placeholder="And" name="last_name">        
                     </div>
                 </div>
                 
@@ -55,7 +55,7 @@
                 <div class="signupInput">
                     <div class="labelPlacement">
                         <label for="user_email">EMAIL</label>
-                        <input type="email" id="user_email" placeholder="A_And38@andeby.dk" name="user_email">
+                        <input type="email" id="user_email" required placeholder="A_And38@andeby.dk" name="user_email">
                     </div>
 
                     <div class="labelPlacement">
@@ -67,18 +67,18 @@
                 <div class="signupInput">
                     <div class="labelPlacement">
                         <label for="user_psw">PASSWORD</label>
-                        <input type="password" id="user_psw" name="user_psw">
+                        <input type="password" id="user_psw" required name="user_psw">
                     </div>
                 
                     <div class="labelPlacement">
                         <label for="user_psw_confirmed">CONFIRM PASSWORD</label>
-                        <input type="password" id="user_psw_confirmed">
+                        <input type="password" id="user_psw_confirmed" required name="user_psw_confirmed">
                     </div>
                 </div>
             </div>
         </form>
     <div class="haveAccountPlacement">
-        <button type="button">Create Account</button>
+        <button type="submit" form="createUserForm">Create Account</button>
         <p class="hasAccount">Already have an account? <a href="https://www.google.com">Log in</a></p>
     </div>
     </div>
