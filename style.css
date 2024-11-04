@@ -47,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
 /*importing fonts*/
 @font-face {
     font-family: 'norsebold';
@@ -215,6 +214,8 @@ em{
 
 .labelPlacement{
     display:flex;
+    position: relative;
+
     flex-direction: column;
     margin-right: 10%;
     width: 40%;
@@ -227,15 +228,75 @@ em{
     margin-bottom: 16px;
 }
 
+.labelPlacement{
+    position: relative;
+}
+
 label{
     text-wrap: nowrap;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
 }
 
 input{
+    position: relative;
     background-color: rgb(141, 193, 218);
     border: 0px;
-    border-bottom: solid black 2px;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    outline: none;
+    
+    font-size: 16px;
+    height: 32px;
 }
+
+
+
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    background-color: rgb(141, 193, 218);
+
+    width:fit-content;
+    transform-origin: left;
+    padding-left: 4px;
+    padding-right: 4px;
+    transform:
+        scale(0.85)
+        translate(12px, -27px);
+    
+    transition: all ease-out 250ms;
+}
+
+input:focus,
+input:not(:placeholder-shown){
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid{
+    border: 2px solid red;
+    box-shadow: 2px 2px 4px red;
+}
+
+input:not(:placeholder-shown):not(:focus):invalid + label{
+    color: red;
+}
+
+.passwordRequirements{
+    transform: scale(0);
+    width: 13em;
+
+}
+.pswContainer:focus-within ~ .passwordRequirements{
+    transform-origin: left;
+    transform: scale(1);
+    transition: all ease-out 250ms;
+
+}
+
+
 
 .haveAccountPlacement{
     display:flex;

@@ -42,39 +42,47 @@
             
                 <div class="signupInput">
                     <div class="labelPlacement">
+                        <input type="text" id="first_name" required placeholder="" name="first_name">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" required placeholder="Anders" name="first_name">
                     </div>
                     <div class="labelPlacement">
+                        <input type="text" id="last_name" required placeholder="" name="last_name">        
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" required placeholder="And" name="last_name">        
                     </div>
                 </div>
                 
                 
-                <div class="signupInput">
+                <div class="signupInput" id="emailRequirements">
                     <div class="labelPlacement">
+                        <input type="email" id="user_email" required placeholder="" name="user_email">
                         <label for="user_email">EMAIL</label>
-                        <input type="email" id="user_email" required placeholder="A_And38@andeby.dk" name="user_email">
                     </div>
 
                     <div class="labelPlacement">
+                        <input type="number" id="user_phone_number" placeholder="" name="user_phone_number">
                         <label for="user_phone_number">PHONE NUMBER</label>
-                        <input type="number" id="user_phone_number" placeholder="555-12345" name="user_phone_number">
                     </div>
                 </div>
 
-                <div class="signupInput">
+                <div class="signupInput pswContainer">
                     <div class="labelPlacement">
+                        <input type="password" id="user_psw" required placeholder="" name="user_psw">
                         <label for="user_psw">PASSWORD</label>
-                        <input type="password" id="user_psw" required name="user_psw">
                     </div>
                 
                     <div class="labelPlacement">
+                        <input type="password" id="user_psw_confirmed" required placeholder="" name="user_psw_confirmed">
                         <label for="user_psw_confirmed">CONFIRM PASSWORD</label>
-                        <input type="password" id="user_psw_confirmed" required name="user_psw_confirmed">
                     </div>
                 </div>
+                
+                <div class=passwordRequirements>
+                    <p class="pswReq">Must contain a number</p>
+                    <p class="pswReq">Must contain a lowercase letter</p>
+                    <p class="pswReq">Must contain an uppercase letter</p>
+                    <p class="pswReq">Must contain a special character</p>
+                </div>
+
             </div>
         </form>
     <div class="haveAccountPlacement">
